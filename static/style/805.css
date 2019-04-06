@@ -1,0 +1,51 @@
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  border-left: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.border-0 {
+  border-width: 0em;
+}
+
+.text-mu {
+  color: #000000;
+}
+.text-mu:hover {
+  color: #ebb96a;
+  transition-duration: 0.6s;
+}
+.bg-mu {
+  background-color: #ebb96a;
+}
+.btn-mu {
+  background-color: #ebb96a;
+  color: #ffffff;
+}
+.btn-mu:hover {
+  background-color: #000000;
+  color: #ffffff;
+  transition-duration: 0.6s;
+}
+
+.btn-outline-mu {
+  background-color: transparent;
+  color: #ebb96a;
+  border-color: #ebb96a;
+}
+.btn-outline-mu:hover {
+  background-color: #ebb96a;
+  color: #ffffff;
+  border-color: #ebb96a;
+  transition-duration: 0.6s;
+}
+
+.header {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("/img/masthead/header.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
