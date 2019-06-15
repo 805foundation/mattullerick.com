@@ -1,0 +1,205 @@
+{{ define "main" }}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 mb-md-0 mb-5">
+      <form
+        id="contact-form"
+        name="contact-form"
+        action="https://formspree.io/speed@duhamelandassociates.com"
+        method="POST"
+      >
+        <div class="col-md-6" hidden>
+          <div class="form-group">
+            <label for="subject" class="">Program</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="md-form mb-0">
+              <input type="text" name="name" class="form-control" />
+              <label for="name" class="">Your Name</label>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="md-form mb-0">
+              <input type="text" id="email" name="email" class="form-control" />
+              <label for="email" class="">Your Email</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="md-form mb-0">
+              <input type="text" name="age" class="form-control" />
+              <label for="age" class="">Age</label>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <select class="form-control" type="text" name="budget">
+                <option value="null">Choose Budget</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+              </select>
+              <label for="budget" class="">What is your Budget?</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="md-form mb-0">
+              <input type="text" name="height" class="form-control" />
+              <label for="height" class="">Height</label>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="md-form mb-0">
+              <input type="text" name="weight" class="form-control" />
+              <label for="weight" class="">Weight</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="md-form">
+              <textarea
+                type="text"
+                name="foods"
+                rows="2"
+                class="form-control md-textarea"
+              ></textarea>
+              <label for="foods"
+                >What foods are you eating on a daily basis?</label
+              >
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="md-form">
+              <textarea
+                type="text"
+                name="allergies/dislikes"
+                rows="2"
+                class="form-control md-textarea"
+              ></textarea>
+              <label for="allergies/dislikes"
+                >Any food allergies or food(s) you hate?</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="md-form">
+              <input
+                type="text"
+                name="how often do you lift?"
+                class="form-control"
+              />
+              <label for="how often do you lift?"
+                >How often do you lift per week?</label
+              >
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <select class="form-control" type="text" name="cardio">
+                <option value="null">Select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+              <label for="cardio" class=""
+                >Do you currently do any cardio?</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <select class="form-control" type="text" name="job">
+                <option value="null">Select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+              <label for="job" class="">Do you have a job?</label>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="md-form">
+              <input type="text" name="where?" class="form-control" />
+              <label for="where?">If yes, where?</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <select
+                class="form-control"
+                type="text"
+                name="job's physical requirements"
+              >
+                <option value="null">Select</option>
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+              </select>
+              <label for="job's physical requirements" class=""
+                >How much physical exertion does your job require?</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="md-form">
+              <textarea
+                type="text"
+                id="message"
+                name="goal"
+                rows="2"
+                class="form-control md-textarea"
+              ></textarea>
+              <label for="goal">What is your goal while working with me?</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="md-form">
+              <textarea
+                type="text"
+                id="message"
+                name="questions or comments"
+                rows="2"
+                class="form-control md-textarea"
+              ></textarea>
+              <label for="questions or comments"
+                >Do you have any questions or things you would like me to
+                know?</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="text-center text-md-left">
+          <button type="submit" value="Send" class="btn btn-mu px-4 py-3">
+            Send
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+{{ end }}
